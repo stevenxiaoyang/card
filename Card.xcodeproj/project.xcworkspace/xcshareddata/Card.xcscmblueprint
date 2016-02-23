@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "23355A115417F91FAE610E95FDE2F1E078DF1BED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "23355A115417F91FAE610E95FDE2F1E078DF1BED" : 0,
+    "C1EF6FD1069089D21EB3EB617998F0FF93A3C0E1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "596EE0C0-2E3E-431E-B883-985DC59678C2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "23355A115417F91FAE610E95FDE2F1E078DF1BED" : "Card\/",
+    "C1EF6FD1069089D21EB3EB617998F0FF93A3C0E1" : "Card\/Card\/LZT\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Card",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Card.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/stevenxiaoyang\/card.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "23355A115417F91FAE610E95FDE2F1E078DF1BED"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:developerlzt\/LZT.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C1EF6FD1069089D21EB3EB617998F0FF93A3C0E1"
+    }
+  ]
+}

@@ -1,81 +1,68 @@
 //
-//  CardCollectionViewController.m
+//  InViewController.m
 //  Card
 //
-//  Created by LuYang on 16/2/17.
+//  Created by LuYang on 16/2/23.
 //  Copyright © 2016年 LuYang. All rights reserved.
 //
 
-#import "CardCollectionViewController.h"
-#import "CardViewLayout.h"
-#import "CardViewCell.h"
+#import "InViewController.h"
+#import "InLayout.h"
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 static NSString * const reuseCellIdentifier = @"cardCellID";
 static NSString * const reuseHeaderIdentifier = @"cardHeaderID";
 static NSString * const reuseFooterIdentifier = @"cardFooterID";
-
-@interface CardCollectionViewController()<CardViewLayoutDelegate,UICollectionViewDataSource>
-@property (nonatomic, strong) CardViewLayout *cardLayout;
+@interface InViewController ()<InLayoutDelegate,UICollectionViewDataSource>
+@property (nonatomic, strong) InLayout *cardLayout;
 @end
-@implementation CardCollectionViewController
-{
-    CGFloat cellHeight;
-    CGFloat widthMargin;
-    CGFloat heightMargin;
-}
+
+@implementation InViewController
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"卡片动画";
+    self.title = @"仿In动态显示动画";
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
     
-    cellHeight = 530.f;
-    widthMargin = 20.f;
-    heightMargin = 8.f;
-    
-    CardViewLayout *cardLayout = [CardViewLayout new];
-    cardLayout.layoutDelegate = self;
-    UICollectionView *cardCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,64,SCREEN_WIDTH,cellHeight) collectionViewLayout:cardLayout];
+    InLayout *inLayout = [InLayout new];
+    inLayout.layoutDelegate = self;
+    UICollectionView *cardCollectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0,64,SCREEN_WIDTH,SCREEN_HEIGHT-64) collectionViewLayout:inLayout];
     cardCollectionView.layer.masksToBounds = NO;
     cardCollectionView.dataSource = self;
     cardCollectionView.backgroundColor = [UIColor whiteColor];
-    cardCollectionView.pagingEnabled = YES;
+    cardCollectionView.pagingEnabled = NO;
     cardCollectionView.bounces = YES;
-    [cardCollectionView registerClass:[CardViewCell class] forCellWithReuseIdentifier:reuseCellIdentifier];
+    [cardCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseCellIdentifier];
     [cardCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:reuseHeaderIdentifier];
     [cardCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:reuseFooterIdentifier];
-    
     [self.view addSubview:cardCollectionView];
+
 }
 
-#pragma mark <CustomTransformCollecionLayoutDelegate>
+#pragma mark <LayoutDelegate>
 
-- (CGSize)itemSizeWithCollectionView:(UICollectionView *)collectionView
-                collectionViewLayout:(CardViewLayout *)collectionViewLayout {
-    return CGSizeMake(SCREEN_WIDTH,cellHeight);
+- (NSArray *)itemHeightWithCollectionView:(UICollectionView *)collectionView
+                collectionViewLayout:(InLayout *)collectionViewLayout {
+    /*
+     *每个cell高度最小为整个屏幕正好显示下,即collectionView的长度
+     *会有个布局计算,返回每个cell的高度,数组添加后返回
+     *这边模拟下
+     */
+    CGFloat minHeight = collectionView.frame.size.height;
+    NSMutableArray *heightArray = [[NSMutableArray alloc]initWithCapacity:3];
+    for (NSInteger i = 0; i < 3; i++) {
+        minHeight += i*100;
+        [heightArray addObject:[NSNumber numberWithFloat:minHeight]];
+    }
+    return heightArray;
 }
 
-- (CGFloat)marginHeightWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(CardViewLayout *)collectionViewLayout
-{
-    return heightMargin;
-}
-
--(CGFloat)marginWidthSizeWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(CardViewLayout *)collectionViewLayout
-{
-    return widthMargin;
-}
-
--(NSInteger)showsPagesWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(CardViewLayout *)collectionViewLayout
-{
-    return 3;
-}
-
--(CGSize)headerViewSizeWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(CardViewLayout *)collectionViewLayout
+-(CGSize)headerViewSizeWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(InLayout *)collectionViewLayout
 {
     return CGSizeMake(SCREEN_WIDTH,65.f);
 }
 
--(CGSize)footerViewSizeWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(CardViewLayout *)collectionViewLayout
+-(CGSize)footerViewSizeWithCollectionView:(UICollectionView *)collectionView collectionViewLayout:(InLayout *)collectionViewLayout
 {
     return CGSizeMake(SCREEN_WIDTH,65.f);
 }
@@ -89,14 +76,25 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
-    return 10;
+    return 3;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView
                   cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CardViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseCellIdentifier forIndexPath:indexPath];
-    NSString *imageName = [NSString stringWithFormat:@"00%ld.jpg",indexPath.row];
-    [cell setImage:imageName];
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseCellIdentifier forIndexPath:indexPath];
+    UIColor *bgColor;
+    switch (indexPath.row) {
+        case 0:
+            bgColor = [UIColor yellowColor];
+            break;
+        case 1:
+            bgColor = [UIColor blueColor];
+            break;
+        default:
+            bgColor = [UIColor redColor];
+            break;
+    }
+    [cell setBackgroundColor:bgColor];
     return cell;
 }
 
@@ -111,4 +109,6 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
     view.backgroundColor = [UIColor grayColor];
     return view;
 }
+
+
 @end

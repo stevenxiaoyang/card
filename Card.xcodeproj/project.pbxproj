@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC0694AC1C76A90900818C48 /* CardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0694AB1C76A90900818C48 /* CardViewCell.m */; };
 		AC0694B81C76AC6500818C48 /* 000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694AE1C76AC6500818C48 /* 000.jpg */; };
 		AC0694B91C76AC6500818C48 /* 001.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694AF1C76AC6500818C48 /* 001.jpg */; };
 		AC0694BA1C76AC6500818C48 /* 002.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694B01C76AC6500818C48 /* 002.jpg */; };
@@ -18,16 +17,18 @@
 		AC0694BF1C76AC6500818C48 /* 007.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694B51C76AC6500818C48 /* 007.jpg */; };
 		AC0694C01C76AC6500818C48 /* 008.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694B61C76AC6500818C48 /* 008.jpg */; };
 		AC0694C11C76AC6500818C48 /* 009.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0694B71C76AC6500818C48 /* 009.jpg */; };
+		AC1038831C7C480900D2F8BF /* CardCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10387E1C7C480900D2F8BF /* CardCollectionViewController.m */; };
+		AC1038841C7C480900D2F8BF /* CardViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1038801C7C480900D2F8BF /* CardViewCell.m */; };
+		AC1038851C7C480900D2F8BF /* CardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1038821C7C480900D2F8BF /* CardViewLayout.m */; };
+		AC1038881C7C495300D2F8BF /* InViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1038871C7C495300D2F8BF /* InViewController.m */; };
+		AC10388B1C7C499B00D2F8BF /* InLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10388A1C7C499B00D2F8BF /* InLayout.m */; };
+		AC10388E1C7C628200D2F8BF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC10388D1C7C628200D2F8BF /* RootViewController.m */; };
 		AC4C0ABD1C74131E004FF8BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4C0ABC1C74131E004FF8BD /* main.m */; };
 		AC4C0AC01C74131E004FF8BD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4C0ABF1C74131E004FF8BD /* AppDelegate.m */; };
 		AC4C0AC81C74131E004FF8BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4C0AC71C74131E004FF8BD /* Assets.xcassets */; };
-		AC4C0AD51C741C55004FF8BD /* CardCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4C0AD41C741C55004FF8BD /* CardCollectionViewController.m */; };
-		AC4C0AD81C744B8C004FF8BD /* CardViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AC4C0AD71C744B8C004FF8BD /* CardViewLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC0694AA1C76A90900818C48 /* CardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewCell.h; sourceTree = "<group>"; };
-		AC0694AB1C76A90900818C48 /* CardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewCell.m; sourceTree = "<group>"; };
 		AC0694AE1C76AC6500818C48 /* 000.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 000.jpg; sourceTree = "<group>"; };
 		AC0694AF1C76AC6500818C48 /* 001.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 001.jpg; sourceTree = "<group>"; };
 		AC0694B01C76AC6500818C48 /* 002.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 002.jpg; sourceTree = "<group>"; };
@@ -38,16 +39,24 @@
 		AC0694B51C76AC6500818C48 /* 007.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 007.jpg; sourceTree = "<group>"; };
 		AC0694B61C76AC6500818C48 /* 008.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 008.jpg; sourceTree = "<group>"; };
 		AC0694B71C76AC6500818C48 /* 009.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 009.jpg; sourceTree = "<group>"; };
+		AC10387D1C7C480900D2F8BF /* CardCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewController.h; sourceTree = "<group>"; };
+		AC10387E1C7C480900D2F8BF /* CardCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewController.m; sourceTree = "<group>"; };
+		AC10387F1C7C480900D2F8BF /* CardViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewCell.h; sourceTree = "<group>"; };
+		AC1038801C7C480900D2F8BF /* CardViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewCell.m; sourceTree = "<group>"; };
+		AC1038811C7C480900D2F8BF /* CardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewLayout.h; sourceTree = "<group>"; };
+		AC1038821C7C480900D2F8BF /* CardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewLayout.m; sourceTree = "<group>"; };
+		AC1038861C7C495300D2F8BF /* InViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InViewController.h; sourceTree = "<group>"; };
+		AC1038871C7C495300D2F8BF /* InViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InViewController.m; sourceTree = "<group>"; };
+		AC1038891C7C499B00D2F8BF /* InLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InLayout.h; sourceTree = "<group>"; };
+		AC10388A1C7C499B00D2F8BF /* InLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InLayout.m; sourceTree = "<group>"; };
+		AC10388C1C7C628200D2F8BF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		AC10388D1C7C628200D2F8BF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		AC4C0AB81C74131E004FF8BD /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC4C0ABC1C74131E004FF8BD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC4C0ABE1C74131E004FF8BD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC4C0ABF1C74131E004FF8BD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AC4C0AC71C74131E004FF8BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC4C0ACC1C74131E004FF8BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC4C0AD31C741C55004FF8BD /* CardCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewController.h; sourceTree = "<group>"; };
-		AC4C0AD41C741C55004FF8BD /* CardCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewController.m; sourceTree = "<group>"; };
-		AC4C0AD61C744B8C004FF8BD /* CardViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewLayout.h; sourceTree = "<group>"; };
-		AC4C0AD71C744B8C004FF8BD /* CardViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,30 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		AC10387B1C7C480900D2F8BF /* In */ = {
+			isa = PBXGroup;
+			children = (
+				AC1038861C7C495300D2F8BF /* InViewController.h */,
+				AC1038871C7C495300D2F8BF /* InViewController.m */,
+				AC1038891C7C499B00D2F8BF /* InLayout.h */,
+				AC10388A1C7C499B00D2F8BF /* InLayout.m */,
+			);
+			path = In;
+			sourceTree = "<group>";
+		};
+		AC10387C1C7C480900D2F8BF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				AC10387D1C7C480900D2F8BF /* CardCollectionViewController.h */,
+				AC10387E1C7C480900D2F8BF /* CardCollectionViewController.m */,
+				AC10387F1C7C480900D2F8BF /* CardViewCell.h */,
+				AC1038801C7C480900D2F8BF /* CardViewCell.m */,
+				AC1038811C7C480900D2F8BF /* CardViewLayout.h */,
+				AC1038821C7C480900D2F8BF /* CardViewLayout.m */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
 		AC4C0AAF1C74131E004FF8BD = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +130,13 @@
 		AC4C0ABA1C74131E004FF8BD /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				AC10387B1C7C480900D2F8BF /* In */,
+				AC10387C1C7C480900D2F8BF /* Card */,
 				AC0694AD1C76AC6500818C48 /* images */,
-				AC4C0AD21C741BEF004FF8BD /* CollectionView */,
 				AC4C0ABE1C74131E004FF8BD /* AppDelegate.h */,
 				AC4C0ABF1C74131E004FF8BD /* AppDelegate.m */,
+				AC10388C1C7C628200D2F8BF /* RootViewController.h */,
+				AC10388D1C7C628200D2F8BF /* RootViewController.m */,
 				AC4C0AC71C74131E004FF8BD /* Assets.xcassets */,
 				AC4C0ACC1C74131E004FF8BD /* Info.plist */,
 				AC4C0ABB1C74131E004FF8BD /* Supporting Files */,
@@ -114,19 +150,6 @@
 				AC4C0ABC1C74131E004FF8BD /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AC4C0AD21C741BEF004FF8BD /* CollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				AC4C0AD31C741C55004FF8BD /* CardCollectionViewController.h */,
-				AC4C0AD41C741C55004FF8BD /* CardCollectionViewController.m */,
-				AC4C0AD61C744B8C004FF8BD /* CardViewLayout.h */,
-				AC4C0AD71C744B8C004FF8BD /* CardViewLayout.m */,
-				AC0694AA1C76A90900818C48 /* CardViewCell.h */,
-				AC0694AB1C76A90900818C48 /* CardViewCell.m */,
-			);
-			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,11 +230,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC0694AC1C76A90900818C48 /* CardViewCell.m in Sources */,
 				AC4C0AC01C74131E004FF8BD /* AppDelegate.m in Sources */,
-				AC4C0AD51C741C55004FF8BD /* CardCollectionViewController.m in Sources */,
-				AC4C0AD81C744B8C004FF8BD /* CardViewLayout.m in Sources */,
+				AC1038881C7C495300D2F8BF /* InViewController.m in Sources */,
+				AC10388E1C7C628200D2F8BF /* RootViewController.m in Sources */,
+				AC1038831C7C480900D2F8BF /* CardCollectionViewController.m in Sources */,
+				AC1038841C7C480900D2F8BF /* CardViewCell.m in Sources */,
+				AC1038851C7C480900D2F8BF /* CardViewLayout.m in Sources */,
 				AC4C0ABD1C74131E004FF8BD /* main.m in Sources */,
+				AC10388B1C7C499B00D2F8BF /* InLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
