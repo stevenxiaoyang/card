@@ -32,6 +32,7 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
     cardCollectionView.backgroundColor = [UIColor whiteColor];
     cardCollectionView.pagingEnabled = NO;
     cardCollectionView.bounces = YES;
+    cardCollectionView.decelerationRate = 0.1f;
     [cardCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseCellIdentifier];
     [cardCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:reuseHeaderIdentifier];
     [cardCollectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionFooter withReuseIdentifier:reuseFooterIdentifier];
@@ -109,6 +110,4 @@ static NSString * const reuseFooterIdentifier = @"cardFooterID";
     view.backgroundColor = [UIColor grayColor];
     return view;
 }
-
-
 @end
